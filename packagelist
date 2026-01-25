@@ -1,0 +1,108 @@
+#!/bin/bash
+
+PACMAN_PACKAGES=(
+    # System Packages
+    gnome-keyring                  # Secure Storage
+    libsecret                      # Security Library
+    qt5                            # GUI Library
+    papirus-icon-theme             # Icon Pack
+    xapp                           # Base Icon Pack
+    xdg-users-dirs                 # Assign home dirs
+    gvfs                           # Virtual File System
+    reflector                      # Updating mirror list
+
+    # Fonts
+    ttf-dejavu                     # Standard System Font
+    ttf-liberation                 # Steam & MS Office Font
+    noto-fonts                     # Base Google Fonts
+    ttf-jetbrains-mono             # Code font
+    ttf-jetbrains-mono-nerd        # Code font with Icons
+    noto-fonts-cjk                 # Chinese/Japanese/Korean
+    noto-fonts-emoji               # Emojis
+
+    # System Control
+    polkit                         # Privilege Escalation
+    brightnessctl                  # Backlight Controller
+    playerctl                      # Media Controller
+    base-devel                     # Build Tools
+
+    # Networking
+    networkmanager                 # Network Manager
+    gnu-netcat                     # Network Utils
+    wget                           # File Retrieval
+    curl                           # Data Transfer
+
+    # Audio
+    pipewire                       # Audio Server
+    pipewire-alsa                  # ALSA Support
+    pipewire-pulse                 # Pulse Compatibility
+    wireplumber                    # PipeWire Session Manager
+    alsa-utils                     # ALSA Configuration
+
+    # Bluetooth
+    bluez                          # Bluetooth Stack
+    bluez-utils                    # Bluetooth CLI Tools
+    blueman                        # Bluetooth GUI Manager
+
+    # Hyprland
+    hyprland                       # Window Manager
+    hyprpolkitagent                # Privilege Elevation
+    hyprpicker                     # Color Picker
+    wl-clipboard                   # CLI clipboard utils
+    hyprlock                       # Lock Screen
+    hyprprop                       # Window Details Tool
+    hyprshot                       # Screenshots
+    nwg-displays                   # Displays manager
+    xdg-desktop-portal-hyprland    # Screen Sharing Support
+
+    # Desktop
+    rofi                           # Rofi Menus (App Launcher)
+    waybar                         # Status Bar
+    dunst                          # Notifications
+    rofi-calc                      # Calculator
+    viewnior                       # Image Viewer
+    alacritty                      # Terminal Emulator
+    thunar                         # File Explorer
+    file-roller                    # Archive Manager
+    xarchiver                      # Archive Viewer
+    tumbler                        # Image Thumbnail Generator
+    ffmpegthumbnailer              # Video Thumbnail Generator
+    gst-libav                      # Video Thumbnail Depend
+    thunar-archive-plugin          # Thunar Archive Tool
+    pavucontrol                    # Audio & Mic Manager
+    gparted                        # Disk Formatter
+    mpv                            # Minimal Video Player
+    vlc                            # Video Player & Formatter
+    gimp                           # Image Editor
+    obs-studio                     # Recording Software
+    discord                        # Discord
+
+    # CLI Tools
+    nano                           # Text Editor
+    neovim                         # Text Editor
+    htop                           # Task Manager
+    bashtop                        # Task Manager
+    tree                           # Hierarchy Viewer
+    ranger                         # TUI File Explorer
+    gdu                            # Disk Space TUI Tool
+    sed                            # CLI Text Utility
+    jq                             # JSON Parser
+    awk                            # Text Processing
+    python-pywal                   # Color Palette Generator
+    man                            # Command Help Instructions
+    man-pages                      # Command Help Instructions
+    clipse                         # Clipboard Manager
+    git                            # Version Control
+    github-cli                     # GitHub Auth Manager
+    zip                            # Compress to ZIP
+    unzip                          # Extract ZIP
+)
+
+AUR_PACKAGES=(
+    google-chrome                  # Web Browser
+    nordic-darker-theme            # GTK theme
+    visual-studio-code-bin         # VS Code
+    otf-monocraft                  # Minecraft Font
+)
+
+

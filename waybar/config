@@ -2,7 +2,7 @@
         "layer": "top",
         "position": "top",
         "reload_style_on_change": true,
-        "modules-left": ["hyprland/workspaces", "cpu", "temperature", "memory"],
+        "modules-left": ["hyprland/workspaces", "cpu", "temperature", "memory", "disk"],
         "modules-center": ["clock"],
         "modules-right": ["tray", "network", "pulseaudio", "battery"],
 
@@ -19,22 +19,19 @@
             }
         },
         "clock": {
-            "format": "{:%I:%M:%S %p} ",
+            "format": "{:%A, %b %d, %I:%M %p}",
+            "format-alt": "{:%A, %b %d, %H:%M:%S}",
             "interval": 1,   
             "tooltip-format": "<tt>{calendar}</tt>",
             "calendar": {
                 "format": {
                     "today": "<span color='#fAfBfC'><b>{}</b></span>"
                 }
-            },
-            "actions": {
-                "on-click-right": "shift_down",
-                "on-click": "shift_up"
             }
         },
         "network": {
             "interval": 5,
-            "format-wifi": "  {bandwidthTotalBytes}",
+            "format-wifi": " {bandwidthTotalBytes}",
             "format-ethernet":"",
             "format-disconnected": "",
             "tooltip-format-disconnected": "Error",
@@ -47,13 +44,16 @@
             "format-charging": "{capacity}% 󰂄",
             "format-plugged": "{capacity}% 󰂄 ",
             "format-alt": "{time} {icon}",
+            "states": {
+                "critical": 15,
+            },
             "format-icons": [
                 "󰁻",
-            "󰁼",
-            "󰁾",
-            "󰂀",
-            "󰂂",
-            "󰁹"
+                "󰁼",
+                "󰁾",
+                "󰂀",
+                "󰂂",
+                "󰁹"
             ],
         },
         "cpu": {
@@ -64,8 +64,14 @@
             "format": " {used:0.1f}G"
         },
         "temperature": {
+            "interval": 1,
             "critical-threshold": 80,
             "format": " {temperatureC}°C",
+        },
+        "disk": {
+          "format": "󰋊 {free}",
+          "tooltip-format": "{used} used of {total} on {path} ({percentage_used}%)",
+          "on-click": "alacritty -e gdu ~"
         },
         "tray": {
             "icon-size": 24,
@@ -74,8 +80,8 @@
         "pulseaudio": {
           "format": " {volume}%",
           "format-muted": " Mute",
-          "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%+",
-          "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%-",
+          "on-scroll-up": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%+",
+          "on-scroll-down": "wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%-",
           "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
         }
 } 
