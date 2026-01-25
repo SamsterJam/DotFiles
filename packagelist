@@ -91,7 +91,6 @@ PACMAN_PACKAGES=(
     python-pywal                   # Color Palette Generator
     man                            # Command Help Instructions
     man-pages                      # Command Help Instructions
-    clipse                         # Clipboard Manager
     git                            # Version Control
     github-cli                     # GitHub Auth Manager
     zip                            # Compress to ZIP
@@ -99,6 +98,7 @@ PACMAN_PACKAGES=(
 )
 
 AUR_PACKAGES=(
+    clipse                         # Clipboard Manager
     google-chrome                  # Web Browser
     nordic-darker-theme            # GTK theme
     visual-studio-code-bin         # VS Code
