@@ -7,7 +7,6 @@ PACMAN_PACKAGES=(
     qt5                            # GUI Library
     papirus-icon-theme             # Icon Pack
     xapp                           # Base Icon Pack
-    xdg-users-dirs                 # Assign home dirs
     gvfs                           # Virtual File System
     reflector                      # Updating mirror list
 
@@ -28,7 +27,7 @@ PACMAN_PACKAGES=(
 
     # Networking
     networkmanager                 # Network Manager
-    gnu-netcat                     # Network Utils
+    netcat                         # Network Utils
     wget                           # File Retrieval
     curl                           # Data Transfer
 
@@ -50,7 +49,6 @@ PACMAN_PACKAGES=(
     hyprpicker                     # Color Picker
     wl-clipboard                   # CLI clipboard utils
     hyprlock                       # Lock Screen
-    hyprprop                       # Window Details Tool
     hyprshot                       # Screenshots
     nwg-displays                   # Displays manager
     xdg-desktop-portal-hyprland    # Screen Sharing Support
@@ -99,10 +97,12 @@ PACMAN_PACKAGES=(
 
 AUR_PACKAGES=(
     clipse                         # Clipboard Manager
+    xdg-users-dirs                 # Assign home dirs
     google-chrome                  # Web Browser
     nordic-darker-theme            # GTK theme
     visual-studio-code-bin         # VS Code
     otf-monocraft                  # Minecraft Font
+    hyprprop                       # Window Details Tool
 )
 
 
