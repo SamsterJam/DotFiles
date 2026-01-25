@@ -1,6 +1,3 @@
-import = ["~/.config/alacritty/colors.toml"]
-live_config_reload = true
-
 [cursor]
 unfocused_hollow = false
 
@@ -30,8 +27,6 @@ family = "JetBrainsMono Nerd Font"
 [window]
 decorations = "full"
 dynamic_title = true
-#history = 10000
-#multiplier = 3
 opacity = 0.8
 startup_mode = "Windowed"
 
@@ -42,3 +37,7 @@ lines = 23
 [window.padding]
 x = 10
 y = 10
+
+[general]
+import = ["~/.config/alacritty/colors.toml"]
+live_config_reload = true
