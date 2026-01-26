@@ -57,6 +57,7 @@ PACMAN_PACKAGES=(
     rofi                           # Rofi Menus (App Launcher)
     waybar                         # Status Bar
     dunst                          # Notifications
+    swaybg                         # Wallpaper
     rofi-calc                      # Calculator
     viewnior                       # Image Viewer
     alacritty                      # Terminal Emulator
@@ -103,6 +104,7 @@ AUR_PACKAGES=(
     visual-studio-code-bin         # VS Code
     otf-monocraft                  # Minecraft Font
     hyprprop                       # Window Details Tool
+    wlogout                        # Logout Menu
 )
 
 
