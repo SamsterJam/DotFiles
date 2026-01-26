@@ -24,6 +24,7 @@ PACMAN_PACKAGES=(
     brightnessctl                  # Backlight Controller
     playerctl                      # Media Controller
     base-devel                     # Build Tools
+    xorg-xhost                     # Xorg App Support
 
     # Networking
     networkmanager                 # Network Manager
